@@ -1,0 +1,6 @@
+#add factory check services
+service factory_err_check /system/bin/check_factory_err.sh
+    class late_start
+    user root
+    group root
+    oneshot
